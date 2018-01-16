@@ -117,7 +117,7 @@ define(function() {
 
             /*----- WEBMAP SETTINGS-----*/            
             useWebmap: true,            
-            webmapID: '65e76035a27349079f201f9392ea2841',
+            webmapID: 'ed77580655a74cc9af7b98171e2ead77',
 
             /* ----- LAYER SETTINGS----- */
             /*  The following layerInfo keys should not change:
