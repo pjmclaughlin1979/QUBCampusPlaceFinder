@@ -1,0 +1,684 @@
+/* color scheme: http://paletton.com/#uid=23t0u0kmUKQceURi6PQrCFzAdxF */
+.esriSimpleSlider,
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton,
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
+
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton,
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+  width: 1.3em;
+  box-sizing: border-box;
+  height: 1.3em;
+  line-height: 1.2em; }
+
+.esriSimpleSlider {
+  background-color: rgba(255, 255, 255, 0); }
+
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton:hover,
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton:hover {
+  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.8); }
+
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton:active,
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton:active {
+  background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0.9); }
+
+.esriSimpleSliderTL {
+  top: 15px;
+  left: 15px; }
+
+/* needs to be under the mappanes and under the popups */
+.esriOverviewMap {
+  z-index: 38; }
+
+/* styling the highlight box. there does NOT seem to be
+a way to do this in the overviewmap constructor. all you
+can do is style the whole rectangle a particular color. */
+.esriOverviewMap .ovwHighlight {
+  border: 2px solid #ff8b00 !important;
+  opacity: 1 !important;
+  background: none !important; }
+
+.esriLegendService {
+  padding-bottom: 10px; }
+
+#legend.hide-subtitles .esriLegendLayerLabel {
+  display: none; }
+
+#legend.hide-subtitles .esriLegendService > table {
+  margin-bottom: 10px; }
+
+.cpfSplashscreen.dijitDialog {
+  width: 500px;
+  border-radius: 15px; }
+
+.cpfSplashscreen .dijitDialogTitleBar {
+  background-color: #439FD0;
+  color: white;
+  text-align: center;
+  text-weight: bold; }
+
+.cpfSplashscreen .dijitDialogPaneContent {
+  background-color: white;
+  color: black; }
+
+.cpfSplashscreen .splashscreenOK {
+  text-align: center; }
+
+.hide {
+  display: none !important; }
+
+.vertical {
+  display: inline-block; }
+
+.vertical .btn:not(:first-of-type) {
+  border-top: none; }
+
+html, body, #main-container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Open Sans, Helvetica Neue, Trebeucht, sans-serif;
+  font-size: 14px; }
+
+.btn {
+  cursor: pointer;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+  border-radius: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.btn:hover {
+  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.8);
+  border-radius: 0; }
+
+.btn:active {
+  background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0.9); }
+
+.btn.disabled {
+  cursor: default;
+  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.8);
+  border-color: #ddd;
+  color: #999 !important; }
+
+.btn.highlight {
+  background-color: #999;
+  background-color: rgba(153, 153, 153, 0.9);
+  color: #fff; }
+
+.map .btn {
+  font-size: 16px;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+  border: 1px solid #aaa; }
+
+#buildingButton {
+  z-index: 39;
+  box-sizing: border-box; }
+
+.cpfHomeButton {
+  padding-bottom: 6px; }
+
+.cpfHomeButton span {
+  position: relative;
+  display: none; }
+
+.cpfHomeButton .home {
+  padding: 2px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-image: url(../images/home.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-size: 30px;
+  width: 1.3em;
+  height: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+  border-bottom: 1px solid #4E4F51; }
+
+.cpfHomeButton .home:hover {
+  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.8); }
+
+.cpfHomeButton .home:active {
+  background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0.9); }
+
+.cpfHomeButton .loading {
+  background-image: url(../images/home-spinner.gif); }
+
+@media all and (max-width: 400px), all and (max-height: 525px) {
+  #map-container_zoom_slider {
+    left: 10px;
+    top: 10px; } }
+
+#map-container,
+#map-cover {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
+#header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background-color: #439FD0;
+  font-size: 32px;
+  line-height: 70px; }
+  #header > div {
+    display: inline-block; }
+
+#header-title {
+  color: white;
+  vertical-align: top;
+  position: absolute;
+  right: 10px;
+  overflow-x: hidden;
+  white-space: nowrap; }
+
+#header-title.small {
+  font-size: 28px; }
+
+#header-title.smaller {
+  font-size: 24px; }
+
+#header-title.smallest {
+  font-size: 20px; }
+
+.esriMobileNavigationBar {
+  top: 90px; }
+
+.esriMobileInfoView {
+  top: 132px; }
+
+.bottom-shadow {
+  position: relative;
+  z-index: 50;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4); }
+
+.outline-shadow {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); }
+
+@media all and (max-width: 400px), all and (max-height: 525px) {
+  #header {
+    height: 50px;
+    font-size: 22px;
+    line-height: 30px; }
+  #header-title.small {
+    font-size: 18px; }
+  #header-title.smaller {
+    font-size: 16px; }
+  #header-title.smallest {
+    font-size: 14px; }
+  #map-container,
+  #map-cover,
+  .esriMobileNavigationBar {
+    top: 50px; }
+  .esriMobileInfoView {
+    top: 92px; }
+  #header-icon {
+    height: 30px; } }
+
+#map-buttons-horizontal {
+  position: absolute;
+  left: 70px;
+  z-index: 39;
+  top: 15px;
+  box-sizing: border-box; }
+
+#map-buttons-horizontal .btn.highlight {
+  background-color: #439FD0; }
+
+#map-buttons-horizontal .btn.arrow-box {
+  position: relative; }
+
+#map-buttons-horizontal .btn.arrow-box:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: #439FD0;
+  border-width: 8px;
+  margin-left: -8px; }
+
+#map-buttons-horizontal .btn.mobile-view:after {
+  border-width: 0; }
+
+#map-buttons-horizontal .map-toggle {
+  border: 1px solid #439FD0;
+  display: inline-block;
+  margin-right: 10px; }
+
+#map-panels-horizontal {
+  height: auto;
+  width: auto;
+  position: absolute;
+  z-index: 39;
+  top: 65px;
+  left: 70px;
+  background-color: #eee; }
+
+.map-panel {
+  display: block;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 10px; }
+
+.map .map-panel {
+  max-width: 285px; }
+
+#map-buttons-vertical {
+  position: absolute;
+  left: 15px;
+  z-index: 39;
+  top: 140px;
+  box-sizing: border-box; }
+
+#map-buttons-vertical .btn.highlight {
+  background-color: #439FD0; }
+
+@media all and (max-width: 400px), all and (max-height: 525px) {
+  #map-buttons-horizontal {
+    top: 10px;
+    left: 60px; }
+  #map-panels-horizontal {
+    top: 60px;
+    left: 50px; }
+  #map-buttons-vertical {
+    left: 10px;
+    top: 130px; } }
+
+#map-cover {
+  overflow: auto;
+  z-index: 40;
+  transition: top 0.5s ease, right 0.1s ease 0.5s, padding-right 0.1s ease 0.5s;
+  color: #eee;
+  background: rgba(0, 0, 0, 0.6); }
+
+.ie8 #map-cover {
+  /* using background-image instead of rgba() and ms filter/gradient because ie8 divs with transparent gradients don't register click events and allow click-throughs (so the map was registering the click). */
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQIW2NgYGB4z4AAFUhsFAG4IsICMIBiLgBmEQcEyASpFQAAAABJRU5ErkJggg==); }
+
+.pattern18 {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEUlEQVQIHWNggIBiEGUFxJUABisBJ85jLc8AAAAASUVORK5CYII=); }
+
+.pattern13 {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAQAAABwz0azAAAAWUlEQVQIHQXBsQqCUAAAwPuzaG/qB4SGNmkTanpDSqOJWJHkoqKFTUq/1x2Ft9ookzK627pp5Aw2IonWh6udIPMy0yulap0TF5Onr6MVBw+LwtqeoPJzFgt/XjsaLaIXlnAAAAAASUVORK5CYII=); }
+
+.pattern03 {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQIW2NgYGB4z4AAFUhsFAG4IsICMIBiLgBmEQcEyASpFQAAAABJRU5ErkJggg==); }
+
+#map-cover.push-down {
+  top: 100% !important;
+  overflow: hidden;
+  height: auto;
+  right: -20px;
+  padding-right: 20px; }
+
+.iphone #map-cover.push-down {
+  right: 0;
+  padding-right: 0; }
+
+#map-cover .map-panel {
+  width: 85%;
+  min-width: 250px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  padding: 20px; }
+
+#map-cover .map-panel > div {
+  text-align: center; }
+
+#popupWrapper {
+  position: absolute;
+  box-sizing: border-box;
+  top: 20px;
+  right: 10px;
+  left: auto;
+  width: auto;
+  overflow: auto;
+  padding: 15px;
+  font-size: 12px;
+  z-index: 39;
+  min-width: 200px;
+  max-width: 40%;
+  max-height: 90%; }
+
+.esriViewPopup .header {
+  color: #439FD0;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-right: 45px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden; }
+
+#popupWrapper .hzLine {
+  margin-right: 45px; }
+
+#popupWrapper .close {
+  position: absolute;
+  right: 15px;
+  width: 2em;
+  height: 2em;
+  line-height: 1.8em; }
+
+.esriViewPopup a {
+  color: #439FD0; }
+
+.esriMobileInfoView {
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: auto;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%; }
+  .esriMobileInfoView .esriViewPopup {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto; }
+
+.esriMobileNavigationBar {
+  background: none;
+  background-image: none;
+  background-color: gray;
+  filter: none; }
+  .esriMobileNavigationBar .esriMobileNavigationItem.left {
+    cursor: pointer;
+    left: 10px; }
+  .esriMobileNavigationBar .esriMobileNavigationItem.right {
+    cursor: pointer;
+    right: 10px; }
+  .esriMobileNavigationBar .esriMobileNavigationItem.center > span {
+    display: none; }
+
+.esriPopupMobile {
+  font-family: inherit; }
+  .esriPopupMobile .titlePane {
+    height: auto;
+    background-color: gray; }
+    .esriPopupMobile .titlePane .title {
+      text-align: center;
+      line-height: 250%;
+      margin: 5px 0; }
+      .esriPopupMobile .titlePane .title.multi {
+        line-height: 150%; }
+    .esriPopupMobile .titlePane .footer {
+      display: none !important; }
+  .esriPopupMobile .pointer.bottom,
+  .esriPopupMobile .pointer.top {
+    background: none !important; }
+  .esriPopupMobile .pointer:after,
+  .esriPopupMobile .pointer:before {
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent; }
+  .esriPopupMobile .pointer:after {
+    border-width: 10px;
+    margin-left: -10px; }
+  .esriPopupMobile .pointer:before {
+    border-width: 13px;
+    margin-left: -13px; }
+  .esriPopupMobile .pointer.bottom:after {
+    top: 0;
+    border-top-color: gray; }
+  .esriPopupMobile .pointer.bottom:before {
+    top: 0;
+    border-top-color: white; }
+  .esriPopupMobile .pointer.top:after {
+    bottom: 0;
+    border-bottom-color: gray; }
+  .esriPopupMobile .pointer.top:before {
+    bottom: 0;
+    border-bottom-color: white; }
+  .esriPopupMobile.no-anchor {
+    left: auto !important;
+    right: 15px !important;
+    top: 15px !important; }
+    .esriPopupMobile.no-anchor .pointer {
+      display: none !important; }
+
+@media all and (max-width: 270px) {
+  .esriMobileInfoView {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .esriMobileInfoView .esriViewPopup {
+      width: 100%; } }
+
+#floorPicker {
+  font-family: sans-serif;
+  font-size: 16px;
+  position: absolute;
+  top: 200px;
+  left: 15px; }
+
+.picker-wrapper .btn {
+  height: 2em;
+  line-height: 2em; }
+
+#floorPicker .floors-div {
+  box-sizing: border-box; }
+
+#floorPicker.set-height {
+  height: 13.4em;
+  /* 2em for each floor, 1.7em for two scroll buttons */ }
+
+#floorPicker.set-height .floors-div {
+  height: 10em;
+  overflow: hidden; }
+
+#floorPicker.set-height .floors-div .btn {
+  border-top: none; }
+
+#floorPicker .scroll-btn {
+  height: 1.7em;
+  line-height: 1.6em; }
+
+@media all and (max-width: 400px) and (min-height: 526px) {
+  #floorPicker {
+    top: 150px;
+    left: 10px; } }
+
+/* if short, put mobile floorpicker back in the bottom left */
+@media all and (max-height: 525px), all and (max-width: 500px) {
+  #floorPicker {
+    bottom: 50px;
+    top: auto;
+    right: 10px;
+    left: auto; }
+  .small-logo #floorPicker {
+    bottom: 30px; } }
+
+#bookmarksView-panel select {
+  font-size: inherit;
+  height: 2.5em;
+  background: none;
+  background-color: #eee;
+  border: 1px solid #439FD0;
+  outline: none;
+  border-radius: 0 !important; }
+
+#bookmarksView-panel select option {
+  font-size: inherit; }
+
+#searchView-panel {
+  max-width: none;
+  width: 310px; }
+
+.simpleLS {
+  width: 100%;
+  font-size: 15px;
+  line-height: 1em;
+  position: relative;
+  color: #444; }
+
+.simpleLS .LayerSearcher {
+  display: block;
+  width: 100%;
+  height: 2em;
+  margin: 0;
+  border: 1px solid #439FD0;
+  background: #fff;
+  position: relative; }
+
+.LayerSearcher .input-wrapper {
+  position: absolute;
+  left: 2em;
+  right: 2em;
+  height: 100%; }
+
+.LayerSearcher input {
+  outline: 0;
+  display: block;
+  border: 0;
+  border-collapse: collapse;
+  vertical-align: middle;
+  font-size: inherit;
+  line-height: 1.9em;
+  float: left;
+  background: none;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+  .LayerSearcher input::-ms-clear {
+    display: none; }
+
+.LayerSearcher .LSIcon {
+  width: 1em;
+  height: 2em;
+  display: block;
+  overflow: hidden;
+  padding: 0 0.5em;
+  cursor: pointer;
+  position: absolute;
+  line-height: 2em; }
+  .LayerSearcher .LSIcon:focus {
+    outline: none; }
+
+.LayerSearcher .LSReset,
+.LayerSearcher .LSLoading {
+  right: 0;
+  display: none; }
+
+.LayerSearcher.has-input .LSReset {
+  display: block;
+  z-index: 1; }
+
+.LayerSearcher.loading .LSLoading {
+  display: block;
+  z-index: 2;
+  background-color: inherit; }
+
+.LayerSearcher.loading .LSReset {
+  display: none; }
+
+.simpleLS .LSResults {
+  z-index: 99;
+  width: 100%;
+  margin: -1px 0 0;
+  border: 1px solid #57585A;
+  border-top: 0;
+  padding: 0;
+  background: #fff;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.simpleLS .resultsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block; }
+
+.simpleLS .LSResult {
+  padding: 6px;
+  display: block;
+  cursor: pointer;
+  outline: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis; }
+
+.simpleLS .search-results-icon {
+  font-size: 1.2em;
+  margin-right: 0.5em; }
+
+.simpleLS .LSResult:hover,
+.simpleLS .LSResult:focus,
+.simpleLS .LSResult:focus {
+  background-color: #ededed; }
+
+.search-error .LayerSearcher {
+  border-color: #ff6600; }
+
+.search-error input {
+  color: #ff6600; }
+
+#load-indicator {
+  position: absolute;
+  top: 20px;
+  left: 49%;
+  z-index: 2;
+  font-size: 48px;
+  color: #439FD0; }
