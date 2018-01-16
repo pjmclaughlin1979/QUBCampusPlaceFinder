@@ -117,7 +117,7 @@ define(function() {
 
             /*----- WEBMAP SETTINGS-----*/            
             useWebmap: true,            
-            webmapID: '65e76035a27349079f201f9392ea2841',
+            webmapID: 'ed77580655a74cc9af7b98171e2ead77',
 
             /* ----- LAYER SETTINGS----- */
             /*  The following layerInfo keys should not change:
@@ -128,7 +128,7 @@ define(function() {
              * for all LayerInfo should be populated.
              */
             buildingLayerInfo: {
-                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBMAP_WFL1/FeatureServer/3',
+                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBCampusFinder_WFL1/FeatureServer/3',
                 layerNum: 3, // required, even if using individual url.
                 buildingField: 'BUILDINGID',
                 labelField: 'LONGNAME',
@@ -137,7 +137,7 @@ define(function() {
                 floorFilter: false // if false, all features of this layer will be shown, all the time.
             },
             floorLayerInfo: {
-                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBMAP_WFL1/FeatureServer/2',
+                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBCampusFinder_WFL1/FeatureServer/2',
                 layerNum: 2,
                 buildingField: 'BUILDINGKEY',
                 floorField: 'FLOOR',
@@ -147,7 +147,7 @@ define(function() {
                 floorFilter: true // if true, only a single building/floor of this layer will be shown at a time.
             },
             roomLayerInfo: {
-                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBMAP_WFL1/FeatureServer/1',
+                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBCampusFinder_WFL1/FeatureServer/1',
                 layerNum: 1,
                 oidField: 'OBJECTID',
                 relationshipId: 0, // this is a related table to the room layer
@@ -177,7 +177,7 @@ define(function() {
                 queryIconClass: 'fa fa-map-marker'
             },
             lineLayerInfo: {
-                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBMAP_WFL1/FeatureServer/0',
+                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBCampusFinder_WFL1/FeatureServer/0',
                 layerNum: 0,
                 buildingField: 'BUILDINGKEY',
                 floorField: 'FLOOR',
@@ -186,7 +186,7 @@ define(function() {
                 floorFilter: true
             },
             personQueryLayerInfo: {
-                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBMAP_WFL1/FeatureServer/4',
+                url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBCampusFinder_WFL1/FeatureServer/4',
                 layerNum: 4,
                 addToMap: false,
                 oidField: 'OBJECTID',
