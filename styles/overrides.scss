@@ -1,0 +1,100 @@
+// unround button corners
+
+.esriSimpleSlider,
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton,
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+}
+
+// change button backgrounds
+
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton,
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton {
+    background-color: $btnBackgroundFallback;
+    background-color: $btnBackgroundColor;
+    font-size: $btnNavigationFontSize;
+    width: 1.3em;
+    box-sizing: border-box;
+    height: 1.3em;
+    line-height: 1.2em;
+}
+
+.esriSimpleSlider {
+    background-color: $transparent;
+}
+
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton:hover,
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton:hover {
+    background-color: $btnHoverBackgroundFallback;
+    background-color: $btnHoverBackgroundColor;
+}
+
+.esriSimpleSliderVertical .esriSimpleSliderIncrementButton:active,
+.esriSimpleSliderVertical .esriSimpleSliderDecrementButton:active {
+    background-color: $btnActiveBackgroundFallback;
+    background-color: $btnActiveBackgroundColor;
+}
+
+// change map position slightly
+.esriSimpleSliderTL {
+    top: 15px;
+    left: 15px;
+}
+
+/* needs to be under the mappanes and under the popups */
+.esriOverviewMap {
+    z-index: 38;
+}
+
+/* styling the highlight box. there does NOT seem to be
+a way to do this in the overviewmap constructor. all you
+can do is style the whole rectangle a particular color. */
+
+.esriOverviewMap .ovwHighlight {
+    border: 2px solid $highlightColor1 !important;
+    opacity: 1 !important;
+    background: none !important;
+}
+
+.esriLegendService {
+    padding-bottom: 10px;
+}
+
+#legend.hide-subtitles {
+    .esriLegendLayerLabel {
+        display: none;
+    }
+    .esriLegendService > table {
+        margin-bottom: 10px;
+    }
+}
+
+
+.cpfSplashscreen.dijitDialog{
+ width:500px;
+ border-radius: 15px;   
+}
+
+
+.cpfSplashscreen .dijitDialogTitleBar{
+    background-color: $brandColor1;
+    color: white;
+    text-align: center;
+    text-weight: bold;
+
+}
+
+.cpfSplashscreen .dijitDialogPaneContent {
+    background-color: white;    
+    color: black;
+}
+
+.cpfSplashscreen .splashscreenOK {
+    text-align: center;
+    //background-color: #F0F8FC;
+
+}
+

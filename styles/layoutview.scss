@@ -1,0 +1,106 @@
+#map-container,
+#map-cover {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    top: $regHeaderHeight;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    height: $regHeaderHeight;
+    background-color: $brandColor1;
+    font-size: 32px;
+    line-height: $regHeaderHeight - 20;
+
+    & > div {
+        display: inline-block;
+    }
+}
+
+#header-title {
+    color: white;
+    vertical-align: top;
+    position: absolute;
+    right: 10px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+#header-title.small {
+    font-size: 28px;
+}
+
+#header-title.smaller {
+    font-size: 24px;
+}
+
+#header-title.smallest {
+    font-size: 20px;
+}
+
+.esriMobileNavigationBar {
+    top: $regHeaderHeight;
+}
+
+.esriMobileInfoView {
+    top: $regHeaderHeight + 42;
+}
+
+.bottom-shadow {
+    position: relative;
+    z-index: 50;
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+       -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+            box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+}
+
+.outline-shadow {
+    -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+// very short or very narrow
+@media all and (max-width: $breakWidth3), all and (max-height: $breakHeight2) {
+    #header {
+        height: $smHeaderHeight;
+        font-size: 22px;
+        line-height: $smHeaderHeight - 20;
+    }
+
+    #header-title.small {
+        font-size: 18px;
+    }
+
+    #header-title.smaller {
+        font-size: 16px;
+    }
+
+    #header-title.smallest {
+        font-size: 14px;
+    }
+
+
+    #map-container,
+    #map-cover,
+    .esriMobileNavigationBar {
+        top: $smHeaderHeight;
+    }
+
+    .esriMobileInfoView {
+        top: $smHeaderHeight + 42;
+    }
+    #header-icon {
+        height: $smHeaderHeight - 20;
+    }
+}

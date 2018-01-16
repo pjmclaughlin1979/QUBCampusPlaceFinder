@@ -1,0 +1,55 @@
+#floorPicker {
+    font-family: sans-serif;
+    font-size: 16px;
+    position: absolute;
+    top: 200px;
+    left: 15px;
+}
+
+.picker-wrapper .btn {
+    height: 2em;
+    line-height: 2em;
+}
+
+#floorPicker .floors-div {
+    box-sizing: border-box;
+}
+
+#floorPicker.set-height {
+    height: 13.4em; /* 2em for each floor, 1.7em for two scroll buttons */
+}
+
+#floorPicker.set-height .floors-div {
+    height: 10em;
+    overflow: hidden;
+}
+
+#floorPicker.set-height .floors-div .btn {
+    border-top: none;
+}
+
+#floorPicker .scroll-btn {
+    height: 1.7em;
+    line-height: 1.6em;
+}
+
+@media all and (max-width: $breakWidth3) and (min-height: $breakHeight2 + 1) {
+    #floorPicker {
+        top: 150px;
+        left: 10px;
+    }
+}
+
+/* if short, put mobile floorpicker back in the bottom left */
+@media all and (max-height: $breakHeight2),
+all and (max-width: $breakWidth2) {
+    #floorPicker {
+        bottom: 50px;
+        top: auto;
+        right: 10px;
+        left: auto;
+    }
+    .small-logo #floorPicker {
+        bottom: 30px;
+    }
+}

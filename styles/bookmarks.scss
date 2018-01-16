@@ -1,0 +1,14 @@
+#bookmarksView-panel select {
+    font-size: inherit;
+    height: 2.5em;
+    background: none;
+    background-color: #eee;
+    border: 1px solid $brandColor1;
+    outline: none;
+    border-radius: 0 !important;
+}
+
+#bookmarksView-panel select option {
+    font-size: inherit;
+}
+

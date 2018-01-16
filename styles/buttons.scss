@@ -1,0 +1,119 @@
+.btn {
+    cursor: pointer;
+    background-color: $btnBackgroundFallback;
+    background-color: $btnBackgroundColor;
+    box-sizing: border-box;
+    border-radius: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: $btnHoverBackgroundFallback;
+    background-color: $btnHoverBackgroundColor;
+    border-radius: 0;
+}
+
+.btn:active {
+    background-color: $btnActiveBackgroundFallback;
+    background-color: $btnActiveBackgroundColor;
+}
+
+.btn.disabled  {
+    cursor: default;
+    background-color: $btnDisabledBackgroundFallback;
+    background-color: $btnDisabledBackground;
+    border-color: $btnDisabledBorder;
+    color: $btnDisabledColor !important;
+}
+
+.btn.highlight {
+    background-color: $btnHighlightBackgroundFallback;
+    background-color: $btnHighlightBackground;
+    color: $btnHighlightColor;
+}
+
+
+.map .btn {
+    font-size: 16px;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+#buildingButton {
+    //position: absolute;
+    //left: 15px;
+    z-index: 39;
+    //top: 30px;
+    box-sizing: border-box;
+}
+
+.cpfHomeButton {
+    padding-bottom: 6px;
+}
+
+.cpfHomeButton span {
+    position: relative;
+    display:none;
+}
+
+.cpfHomeButton .home {
+    padding:2px;    
+    background-color: $btnBackgroundFallback;
+    background-color: $btnBackgroundColor;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:pointer;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -o-border-radius:0;
+    border-radius:0;
+    background-image:url(../images/home.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    box-sizing: border-box;
+    font-size: $btnNavigationFontSize;
+    width: 1.3em;
+    height: 1.2em;
+    line-height: 1.2em;
+    text-align: center;   
+    border-bottom: 1px solid #4E4F51;
+}
+
+.cpfHomeButton .home:hover {
+    background-color: $btnHoverBackgroundFallback;
+    background-color: $btnHoverBackgroundColor;
+}
+
+.cpfHomeButton .home:active {
+    background-color: $btnActiveBackgroundFallback;
+    background-color: $btnActiveBackgroundColor;
+}
+
+.cpfHomeButton .loading {
+    background-image:url(../images/home-spinner.gif);
+}
+
+// very short or very narrow
+@media all and (max-width: $breakWidth3), all and (max-height: $breakHeight2) {
+    #map-container_zoom_slider {
+        left: 10px;
+        top: 10px;
+    }
+
+    #buildingButton {
+        //position: absolute;
+        //top: 30px;
+        //left: 10px;
+    }
+
+}

@@ -1,0 +1,11 @@
+.hide {
+    display: none !important;
+}
+
+.vertical {
+    display: inline-block;
+}
+
+.vertical .btn:not(:first-of-type) {
+    border-top: none;
+}

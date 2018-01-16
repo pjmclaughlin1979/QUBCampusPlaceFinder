@@ -1,0 +1,97 @@
+#map-buttons-horizontal {
+    position: absolute;
+    left: 70px;
+    z-index: 39;
+    top: 15px;
+    box-sizing: border-box;
+}
+
+#map-buttons-horizontal .btn.highlight {
+    background-color: $brandColor1;
+}
+
+#map-buttons-horizontal .btn.arrow-box {
+    position: relative;
+}
+
+#map-buttons-horizontal .btn.arrow-box:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: $brandColor1;
+    border-width: 8px;
+    margin-left: -8px;
+}
+
+// don't put arrow on map toggle in mobile view.
+#map-buttons-horizontal .btn.mobile-view:after {
+    border-width: 0;
+}
+
+#map-buttons-horizontal .map-toggle {
+    border: 1px solid $brandColor1;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+#map-panels-horizontal {
+    height: auto;
+    width: auto;
+    position: absolute;
+    z-index:  39;
+    top: 65px;
+    left: 70px;
+    background-color: #eee; // here in addition to below because of IE scroll margin
+}
+
+.map-panel {
+    display: block;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    background-color: #eee;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.map .map-panel {
+    max-width: 285px;
+}
+
+#map-buttons-vertical {
+    position: absolute;
+    left: 15px;
+    z-index: 39;
+    top: 140px;
+    box-sizing: border-box;
+}
+
+#map-buttons-vertical .btn.highlight {
+    background-color: $brandColor1;
+}
+
+// very short or very narrow
+@media all and (max-width: $breakWidth3), all and (max-height: $breakHeight2) {
+    #map-buttons-horizontal {
+        top: 10px;
+        left: 60px;
+    }
+
+    #map-panels-horizontal {
+        top: 60px;
+        left: 50px;
+    }
+
+    #map-buttons-vertical {
+    left: 10px;
+    top: 130px;
+}
+}
+

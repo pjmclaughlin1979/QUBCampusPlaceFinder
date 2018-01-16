@@ -1,0 +1,66 @@
+// there are more map-container styles in with the map in layoutview
+#map-cover {
+    overflow: auto;
+    z-index: 40;
+    transition: top 0.5s ease, right 0.1s ease 0.5s, padding-right 0.1s ease 0.5s;
+    color: #eee;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.ie8 #map-cover {
+    /* using background-image instead of rgba() and ms filter/gradient because ie8 divs with transparent gradients don't register click events and allow click-throughs (so the map was registering the click). */
+    //.pattern03 below
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQIW2NgYGB4z4AAFUhsFAG4IsICMIBiLgBmEQcEyASpFQAAAABJRU5ErkJggg==);
+}
+
+// more options for map-cover background
+.pattern18 {
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEUlEQVQIHWNggIBiEGUFxJUABisBJ85jLc8AAAAASUVORK5CYII=);
+
+}
+
+.pattern13 {
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAQAAABwz0azAAAAWUlEQVQIHQXBsQqCUAAAwPuzaG/qB4SGNmkTanpDSqOJWJHkoqKFTUq/1x2Ft9ookzK627pp5Aw2IonWh6udIPMy0yulap0TF5Onr6MVBw+LwtqeoPJzFgt/XjsaLaIXlnAAAAAASUVORK5CYII=);
+
+}
+
+.pattern03 {
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQIW2NgYGB4z4AAFUhsFAG4IsICMIBiLgBmEQcEyASpFQAAAABJRU5ErkJggg==);
+}
+
+#map-cover.push-down {
+    top: 100% !important;
+    overflow: hidden;
+    height: auto;
+    right: -20px;
+    padding-right: 20px;
+}
+
+.iphone #map-cover.push-down {
+    right: 0;
+    padding-right: 0;
+}
+
+#map-cover .map-panel {
+    width:  85%;
+    min-width:  250px;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#map-cover .map-panel > div {
+    text-align: center;
+}
+
+@media all and (max-height: $breakHeight2),
+all and (max-width: $breakWidth2) {
+    #map-cover.push-down {
+        //top: 100% !important;
+        //overflow: hidden;
+        //height: auto;
+        //right: -20px;
+        //padding-right: 20px;
+    }
+
+}

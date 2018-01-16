@@ -1,0 +1,53 @@
+/* color scheme: http://paletton.com/#uid=23t0u0kmUKQceURi6PQrCFzAdxF */
+
+$transparent: rgba(255, 255, 255, 0);
+
+// colors
+
+$brandColor1: #439FD0; // lighter blue
+// $brandColor1: #0079C2; // darker esri blue
+
+$highlightColor1: #ff8b00; // 255, 139, 0
+
+$errorColor1: #ff6600;
+
+// numbers
+$regHeaderHeight: 90px;
+$smHeaderHeight: 50px;
+
+
+$breakWidth1: 700px;
+$breakWidth2: 500px;
+$breakWidth3: 400px;
+
+$breakHeight1: 600px;
+$breakHeight2: 525px;
+$breakHeight3: 400px;
+
+// buttons
+
+$btnBackgroundFallback: #fff;
+$btnBackgroundColor: rgba(255, 255, 255, 0.7);
+$btnHoverBackgroundFallback: #eee;
+$btnHoverBackgroundColor: rgba(238, 238, 238, 0.8);
+$btnActiveBackgroundFallback: #ddd;
+$btnActiveBackgroundColor: rgba(221, 221, 221, 0.9);
+
+$btnDisabledBackgroundFallback: #eee;
+$btnDisabledBackground: rgba(238, 238, 238, 0.8);
+$btnDisabledBorder: #ddd;
+$btnDisabledColor: #999;
+
+$btnHighlightBackgroundFallback: #999;
+$btnHighlightBackground: rgba(153, 153, 153, 0.9);
+$btnHighlightColor: #fff;
+
+//font size for navigation buttons
+$btnNavigationFontSize: 30px;
+
+// dev
+
+$devColor1: yellow;
+$devColor2: red;
+$devColor3: blue;
+$devColor4: lime;

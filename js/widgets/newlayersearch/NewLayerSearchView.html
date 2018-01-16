@@ -1,0 +1,17 @@
+<div class="simpleLS">
+    <div class="LayerSearcher" data-dojo-attach-point="containerNode">
+        <div title="${resources.layerSearchTitle}" tabindex="0" class="LSSearch LSIcon" data-dojo-attach-point="submitNode">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="input-wrapper">
+            <input id="${id}-input" tabindex="0" placeholder="${resources.layerSearchPlaceholder}" value="${inputValue}" autocomplete="off" type="text" data-dojo-attach-point="inputNode">
+        </div>
+        <div tabindex="0" class="LSReset LSIcon" data-dojo-attach-point="clearNode">
+            <i class="fa fa-close"></i>
+        </div>
+        <div tabindex="0" class="LSLoading LSIcon">
+            <i class="fa fa-spin fa-spinner"></i>
+        </div>
+    </div>
+    <div class="LSResults" data-dojo-attach-point="resultsNode"></div>
+</div>

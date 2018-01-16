@@ -1,0 +1,140 @@
+#searchView-panel {
+    max-width: none;
+    width: 310px;
+}
+
+.simpleLS {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1em;
+    position: relative;
+    color: #444;
+}
+
+.simpleLS .LayerSearcher {
+    display: block;
+    width: 100%;
+    height: 2em;
+    margin: 0;
+    border: 1px solid $brandColor1;
+    background: #fff;
+    position: relative;
+}
+
+.LayerSearcher .input-wrapper {
+    position: absolute;
+    left: 2em;
+    right: 2em;
+    height: 100%;
+}
+
+.LayerSearcher input {
+    outline: 0;
+    display: block;
+    border: 0;
+    border-collapse: collapse;
+    vertical-align: middle;
+    font-size: inherit;
+    line-height: 1.9em;
+    float: left;
+    background: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    &::-ms-clear {
+        display:none;
+    }
+}
+
+.LayerSearcher .LSIcon {
+    width: 1em;
+    height: 2em;
+    display: block;
+    overflow: hidden;
+    padding: 0 0.5em;
+    cursor: pointer;
+    position: absolute;
+    line-height: 2em;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.LayerSearcher .LSReset,
+.LayerSearcher .LSLoading {
+    right: 0;
+    display: none;
+}
+
+.LayerSearcher.has-input .LSReset {
+    display: block;
+    z-index: 1;
+}
+
+.LayerSearcher.loading {
+
+    .LSLoading {
+        display: block;
+        z-index: 2;
+        background-color: inherit;
+    }
+
+    .LSReset {
+        display: none;
+    }
+}
+
+.simpleLS .LSResults {
+    z-index: 99;
+    width: 100%;
+    margin: -1px 0 0;
+    border: 1px solid #57585A;
+    border-top: 0;
+    padding: 0;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.simpleLS .resultsList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.simpleLS .LSResult {
+    padding: 6px;
+    display: block;
+    cursor: pointer;
+    outline: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.simpleLS .search-results-icon {
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.simpleLS .LSResult:hover,
+.simpleLS .LSResult:focus,
+.simpleLS .LSResult:focus {
+    background-color: #ededed;
+}
+
+.search-error {
+    .LayerSearcher {
+        border-color: $errorColor1;
+    }
+    input {
+        color: $errorColor1;
+    }
+}
+

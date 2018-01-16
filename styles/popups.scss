@@ -1,0 +1,216 @@
+$close-button-margin: 45px;
+
+#popupWrapper {
+    position: absolute;
+    box-sizing: border-box;
+    top: 20px;
+    right: 10px;
+    left: auto;
+    width: auto;
+    overflow: auto;
+    padding: 15px;
+    font-size: 12px;
+    z-index: 39;
+    min-width: 200px;
+    max-width: 40%;
+    max-height: 90%;
+}
+
+.esriViewPopup .header {
+    color: $brandColor1;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-right: $close-button-margin; // leave room for close button
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+
+#popupWrapper .hzLine {
+    margin-right: $close-button-margin; // leave room for close button
+}
+
+#popupWrapper .close {
+    position: absolute;
+    right: 15px;
+    width: 2em;
+    height: 2em;
+    line-height: 1.8em;
+}
+
+.esriViewPopup a {
+    color: $brandColor1;
+}
+
+
+// positioning in layoutview
+.esriMobileInfoView {
+    box-sizing: border-box;
+    padding: 15px;
+    overflow: auto;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    .esriViewPopup {
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+// positioning in layoutview.scss
+.esriMobileNavigationBar {
+    background: none;
+    background-image: none;
+    background-color: gray;
+    filter: none; // IE9 gradient
+
+    .esriMobileNavigationItem {
+        &.left {
+            cursor: pointer;
+            left: 10px;
+        }
+
+        &.right {
+            cursor: pointer;
+            right: 10px;
+        }
+
+        // get rid of the "1 of 1" in the view header
+        &.center > span {
+            display: none;
+        }
+    }
+}
+
+// .arrow_box {
+//     position: relative;
+//     background: #666666;
+//     border: 2px solid #ffffff;
+// }
+// .arrow_box:after, .arrow_box:before {
+//     top: 100%;
+//     left: 50%;
+//     border: solid transparent;
+//     content: " ";
+//     height: 0;
+//     width: 0;
+//     position: absolute;
+//     pointer-events: none;
+// }
+
+// .arrow_box:after {
+//     border-color: rgba(102, 102, 102, 0);
+//     border-top-color: #666666;
+//     border-width: 10px;
+//     margin-left: -10px;
+// }
+// .arrow_box:before {
+//     border-color: rgba(255, 255, 255, 0);
+//     border-top-color: #ffffff;
+//     border-width: 13px;
+//     margin-left: -13px;
+// }
+
+.esriPopupMobile {
+    font-family: inherit;
+
+    .titlePane {
+        height: auto;
+        background-color: gray;
+
+        .title {
+            text-align: center;
+            line-height: 250%;
+            margin: 5px 0;
+
+            &.multi {
+                line-height: 150%;
+            }
+        }
+
+
+        // get rid of "1 of 1" since it will always be just 1
+        .footer {
+            display: none !important;
+        }
+    }
+
+    .pointer.bottom,
+    .pointer.top {
+        background: none !important;
+    }
+
+    .pointer:after,
+    .pointer:before {
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent;
+    }
+    .pointer:after {
+        border-width: 10px;
+        margin-left: -10px;
+    }
+
+    .pointer:before {
+        border-width: 13px;
+        margin-left: -13px;
+    }
+
+    .pointer.bottom:after {
+        top: 0;
+        border-top-color: gray;
+    }
+
+    .pointer.bottom:before {
+        top: 0;
+        border-top-color: white;
+    }
+
+    .pointer.top:after {
+        bottom: 0;
+        border-bottom-color: gray;
+    }
+
+    .pointer.top:before {
+        bottom: 0;
+        border-bottom-color: white;
+    }
+
+
+    &.no-anchor {
+        left: auto !important;
+        right: 15px !important;
+        top: 15px !important;
+
+        .pointer {
+            display: none !important;
+        }
+    }
+}
+
+// default mobile popup width is 260px
+// TODO: what if screen is less than 270? this doesn't really work...
+@media all and (max-width: 270px) {
+    // .esriPopupMobile,
+    // .esriPopupMobile .sizer {
+    //     width: 100%;
+    // }
+
+    .esriMobileInfoView {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        .esriViewPopup {
+            width: 100%;
+        }
+    }
+}
