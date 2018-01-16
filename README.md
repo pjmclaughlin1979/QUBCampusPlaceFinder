@@ -1,4 +1,6 @@
 ## Welcome to GitHub Pages
+View the site here:
+https://pjmclaughlin1979.github.io/QUBCampusPlaceFinder/
 
 You can use the [editor on GitHub](https://github.com/pjmclaughlin1979/QUBCampusPlaceFinder/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
