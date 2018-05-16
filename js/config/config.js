@@ -150,7 +150,7 @@ define(function() {
                 url: 'https://services.arcgis.com/pMnvm7HXxTmNXxGi/arcgis/rest/services/QUBCampusFinder_WFL1/FeatureServer/1',
                 layerNum: 1,
                 oidField: 'OBJECTID',
-                relationshipId: 0, // this is a related table to the room layer
+                relationshipId: 4, // this is a related table to the room layer
                 buildingField: 'BUILDING',
                 floorField: 'FLOOR',
                 roomField: 'SPACEID', // this must be a UNIQUE KEY for the room layer.
